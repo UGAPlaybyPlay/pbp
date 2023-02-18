@@ -1,0 +1,422 @@
+<html>
+<head>
+	<title>UGA PBP</title>
+	<link rel="icon" type="image/svg+xml" href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/georgiadogs.com/images/nextgen_2022/logo_main.svg"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Trade Gothic Bold, sans-serif;
+  text-decoration: none;
+}
+
+/* Create five equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 215px; 
+
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+h1{
+	background-color: black;
+	font-weight: bolder;
+	font-size: 30;
+	color: #BA0C2F;
+	float: left;
+	padding-left: 30px ;
+	text-align: center;
+	
+}
+
+
+
+.titlelogo{
+	display: flex;
+	flex-direction: row;
+}
+
+
+h2{
+	background-color: #000000;
+	font-weight: bold;
+	font-size: 30;
+	color: black;
+	text-align: center;
+	text-shadow:
+    -1px -1px 0 #FFFFFF,
+    1px -1px 0 #FFFFFF,
+    -1px 1px 0 #FFFFFF,
+    1px 1px 0 #FFFFFF;
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+header {
+	background-color: black;
+}
+
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.logo {
+	float: left;
+	margin-top: 12px;
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #BA0C2F;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #BA0C2F;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #BA0C2F;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #212121;
+  font-family: Trade Gothic Bold, sans-serif;
+}
+
+.playerlist {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  height: 5%;
+  text-decoration: none;
+  text-align: center;
+}
+
+.playerlist td, th {
+  border: 1px solid #BA0C2F;
+  padding: 8px;
+  text-align: center;
+}
+
+th, td {
+	padding: 15px;
+	text-align: center;
+}
+
+table.playerlist {
+    table-layout: fixed;
+    width: 100%;
+    height: 5%;
+    text-align: center;
+}
+    table.playerlist td.PerformanceCell {
+        width: 75px;
+    }
+
+.playerlist tr:nth-child(even){background-color: black;}
+
+.playerlist tr:hover {background-color: #ddd;}
+
+.playerlist th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: black;
+  color: #BA0C2F;
+
+
+}
+
+.customplay{
+	background-color: black;
+	color: #BA0C2F;
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	height: 50%;
+
+
+}
+
+.poscol {
+	background-color: #BA0C2F;
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 25px;
+	width: 650px;
+}
+
+.clearallbtn {
+	background-color: darkgray;
+	color: black;
+	font-weight: bold;
+	font-size: 75%;
+	width: 5%;
+	height: 3%;
+	border-radius: 10px;
+	position: fixed;
+  right: 30;
+  bottom: 30;
+
+}
+
+.submitbutton {
+	background-color: black;
+	color: #BA0C2F;
+  border: 2px solid #BA0C2F;
+	font-weight: bold;
+	font-size: 100%;
+	width: 10%;
+	height: 5%;
+	border-radius: 10px;
+	position: fixed;
+  right: 200;
+  bottom: 30;
+	
+}
+
+</style>
+</head>
+
+</script>
+<header>
+	<div class="container">
+		<img class ="logo" src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/georgiadogs.com/images/nextgen_2022/logo_main.svg" alt="UGA" width="60" height="48">
+		<h1>UGA Play by Play Defense Setup</h1>
+		<nav>
+			<ul >
+        <li><a href="#">Home</li>
+        <li><a href="D:\UGA App\NEW\UGAOffensePBP.html">Offense</li>
+        <li><a href="D:\UGA App\NEW\UGAOffenseSetup.html">Off Set Up</li>  
+        <li><a href="D:\UGA App\NEW\UGADefensePBP.html">Defense</li>
+        <li><a href="D:\UGA App\NEW\UGADefenseSetup.html">Def Set Up</li> 
+        <li><a href="#">Roster</li>
+			</ul>
+		</nav>
+	</div >
+</header>
+<br>
+<table class ="playerlist">
+  <thead>
+    <tr>
+    </tr>
+  </thead>
+  <tbody id="table-body">
+    <tr id="table-row">
+      <td class ="customplay" contenteditable="true" id="57">1</td>
+      <td class ="customplay" contenteditable="true" id="58">2</td>
+      <td class ="customplay" contenteditable="true" id="59">3</td>
+      <td class ="customplay" contenteditable="true" id="60">4</td>
+      <td class ="customplay" contenteditable="true" id="61">5</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<table>
+  <thead>
+    <tr>
+    	<th class="poscol">DL</th>
+    	<th class="poscol">DL</th>
+    	<th class="poscol">DL</th>
+    </tr>
+  </thead>
+  <tbody id="table-body">
+    <tr id="table-row">
+      <td class ="customplay" contenteditable="true" id="62"></td>
+      <td class ="customplay" contenteditable="true" id="63"></td>
+      <td class ="customplay" contenteditable="true" id="64"></td>
+    </tr>
+    <tr id="table-row">
+      <td class ="customplay" contenteditable="true" id="65"></td>
+      <td class ="customplay" contenteditable="true" id="66"></td>
+      <td class ="customplay" contenteditable="true" id="67"></td>
+    </tr>
+    <tr id="table-row">
+      <td class ="customplay" contenteditable="true" id="68"></td>
+      <td class ="customplay" contenteditable="true" id="69"></td>
+      <td class ="customplay" contenteditable="true" id="70"></td>
+    </tr>
+    <tr id="table-row">
+      <td class ="customplay" contenteditable="true" id="71"></td>
+      <td class ="customplay" contenteditable="true" id="72"></td>
+      <td class ="customplay" contenteditable="true" id="73"></td>
+    </tr>
+    <tr id="table-row">
+      <td class ="customplay" contenteditable="true" id="74"></td>
+      <td class ="customplay" contenteditable="true" id="75"></td>
+      <td class ="customplay" contenteditable="true" id="76"></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<table>
+  <thead>
+    <tr>
+      <th class="poscol"></th>
+      <th class="poscol"></th>
+      <th class="poscol"></th>
+      <th class="poscol"></th>
+    </tr>
+  </thead>
+  <tbody id="table-body">
+    <tr id="table-row">
+      <td class ="customplay" contenteditable="true" id="77"></td>
+      <td class ="customplay" contenteditable="true" id="78"></td>
+      <td class ="customplay" contenteditable="true" id="79"></td>
+      <td class ="customplay" contenteditable="true" id="80"></td>
+    </tr>
+    <tr id="table-row">
+      <td class ="customplay" contenteditable="true" id="81"></td>
+      <td class ="customplay" contenteditable="true" id="82"></td>
+      <td class ="customplay" contenteditable="true" id="83"></td>
+      <td class ="customplay" contenteditable="true" id="84"></td>
+    </tr>
+    <tr id="table-row">
+      <td class ="customplay" contenteditable="true" id="85"></td>
+      <td class ="customplay" contenteditable="true" id="86"></td>
+      <td class ="customplay" contenteditable="true" id="87"></td>
+      <td class ="customplay" contenteditable="true" id="88"></td>
+    </tr>
+    <tr id="table-row">
+      <td class ="customplay" contenteditable="true" id="89"></td>
+      <td class ="customplay" contenteditable="true" id="90"></td>
+      <td class ="customplay" contenteditable="true" id="91"></td>
+      <td class ="customplay" contenteditable="true" id="92"></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<table>
+  <thead>
+    <tr>
+      <th class="poscol"></th>
+      <th class="poscol">S</th>
+      <th class="poscol">S</th>
+      <th class="poscol">CB</th>
+      <th class="poscol"></th>
+    </tr>
+  </thead>
+  <tbody id="table-body">
+    <tr id="table-row">
+      <td class ="customplay" contenteditable="true" id="93"></td>
+      <td class ="customplay" contenteditable="true" id="94"></td>
+      <td class ="customplay" contenteditable="true" id="95"></td>
+      <td class ="customplay" contenteditable="true" id="96"></td>
+      <td class ="customplay" contenteditable="true" id="97"></td>
+    </tr>
+    <tr id="table-row">
+      <td class ="customplay" contenteditable="true" id="98"></td>
+      <td class ="customplay" contenteditable="true" id="99"></td>
+      <td class ="customplay" contenteditable="true" id="100"></td>
+      <td class ="customplay" contenteditable="true" id="101"></td>
+      <td class ="customplay" contenteditable="true" id="102"></td>
+    </tr>
+    <tr id="table-row">
+      <td class ="customplay" contenteditable="true" id="103"></td>
+      <td class ="customplay" contenteditable="true" id="104"></td>
+      <td class ="customplay" contenteditable="true" id="105"></td>
+      <td class ="customplay" contenteditable="true" id="106"></td>
+      <td class ="customplay" contenteditable="true" id="107"></td>
+    </tr>
+    <tr id="table-row">
+      <td class ="customplay" contenteditable="true" id="108"></td>
+      <td class ="customplay" contenteditable="true" id="109"></td>
+      <td class ="customplay" contenteditable="true" id="110"></td>
+      <td class ="customplay" contenteditable="true" id="111"></td>
+      <td class ="customplay" contenteditable="true" id="112"></td>
+    </tr>
+  </tbody>
+</table>
+
+<button class="clearallbtn" id="clear-button">Clear</button>
+<button class="submitbutton" id="submit-button">Submit</button>
+
+<script>
+  const tableRow = document.getElementById('table-row');
+  const submitButton = document.getElementById('submit-button');
+  const clearButton = document.getElementById('clear-button');
+
+  submitButton.addEventListener('click', function() {
+    for (let i = 57; i <= 112; i++) {
+      const Player = document.getElementById(`${i}`);
+      localStorage.setItem(`${i}`, Player.textContent);
+    }
+  });
+
+  clearButton.addEventListener('click', function() {
+    if (confirm("Are you sure? This will clear all players on Offense and Defense. This action cannot be undone.")) {
+      localStorage.clear();
+    }
+  });
+
+  window.addEventListener('load', function() {
+    for (let i = 57; i <= 112; i++) {
+      const Player = document.getElementById(`${i}`);
+      const value = localStorage.getItem(`${i}`);
+      if (value) {
+        Player.textContent = value;
+      }
+    }
+  });
+</script>
+
+
+
+</style>
+</head>
+</script>
+</body>
+</html>
+
+

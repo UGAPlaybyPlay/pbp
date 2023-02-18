@@ -1,0 +1,573 @@
+<html>
+<head>
+	<title>UGA PBP</title>
+	<link rel="icon" type="image/svg+xml" href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/georgiadogs.com/images/nextgen_2022/logo_main.svg"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Trade Gothic Bold, sans-serif;
+  text-decoration: none;
+}
+
+/* Create five equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 215px; 
+
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+h1{
+	background-color: #BA0C2F;
+	font-weight: bolder;
+	font-size: 30;
+	color: black;
+	float: left;
+	padding-left: 30px ;
+	text-align: center;
+	
+}
+
+
+
+.titlelogo{
+	display: flex;
+	flex-direction: row;
+}
+
+
+h2{
+	background-color: #000000;
+	font-weight: bold;
+	font-size: 30;
+	color: #BA0C2F;
+	text-align: center;
+	text-shadow:
+    -1px -1px 0 #FFFFFF,
+    1px -1px 0 #FFFFFF,
+    -1px 1px 0 #FFFFFF,
+    1px 1px 0 #FFFFFF;
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+header {
+	background-color: #BA0C2F;
+}
+
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.logo {
+	float: left;
+	margin-top: 12px;
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: black;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #212121;
+  font-family: Trade Gothic Bold, sans-serif;
+}
+
+.playerlist {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  height: 5%;
+  text-decoration: none;
+  text-align: center;
+}
+
+.playerlist td, th {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+th, td {
+	padding: 8px;
+	text-align: center;
+}
+
+table.playerlist {
+    table-layout: fixed;
+    width: 100%;
+    height: 5%;
+    text-align: center;
+}
+    table.playerlist td.PerformanceCell {
+        width: 75px;
+    }
+
+.playerlist tr:nth-child(even){background-color: #BA0C2F;}
+
+.playerlist tr:hover {background-color: #ddd;}
+
+.playerlist th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #BA0C2F;
+  color: black;
+
+
+}
+
+.customplay{
+	background-color: silver;
+	color: black;
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	height: 30%;
+
+
+}
+
+.poscol {
+	background-color: black;
+	color: #BA0C2F;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 25px;
+	width: 650px;
+
+}
+
+.clearallbtn {
+	background-color: #212121;
+  border: none;
+	
+}
+
+.submitbutton {
+  background-color: #212121;
+  border: none;
+	
+}
+
+.inj-btn button{
+  background-color: blue;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  font-size: 20;
+  border-radius: 5px;
+  position:fixed;
+  right:765;
+  bottom:30;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.flag-btn button{
+  background-color: yellow;
+  border: 2px solid black;
+  color: black;
+  font-weight: bold;
+  font-size: 20;
+  border-radius: 5px;
+  position:fixed;
+  right:600;
+  bottom:30;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.to-btn button{
+  background-color: green;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  font-size: 20;
+  border-radius: 5px;
+  position:fixed;
+  right:400;
+  bottom:30;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 50px;
+}
+
+.refresh button{
+  background-color: white;
+  font-weight: bolder;
+  border: 1px;
+  position:fixed;
+  right:30;
+  bottom:30;
+  width:300px;
+  height:50px;
+  font-size: 20;
+  border-radius: 5px;
+}
+
+.pbptable {
+  background-color: black;
+  color: white;
+  width: 100%;
+  border: 5px solid black;
+  font-weight: bold;
+  font-size: 30px;
+  float: left;
+}
+
+.pbptable tr{
+  background-color: #BA0C2F;
+  color: white;
+  width: 100%;
+  border: 10px solid black;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+</style>
+</head>
+
+</script>
+<header>
+	<div class="container">
+		<img class ="logo" src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/georgiadogs.com/images/nextgen_2022/logo_main.svg" alt="UGA" width="60" height="48">
+		<h1>UGA Play by Play - Defense</h1>
+		<nav>
+			<ul >
+        <li><a href="#">Home</li>
+        <li><a href="D:\UGA App\NEW\UGAOffensePBP.html">Offense</li>
+        <li><a href="D:\UGA App\NEW\UGAOffenseSetup.html">Off Set Up</li>  
+        <li><a href="D:\UGA App\NEW\UGADefensePBP.html">Defense</li>
+        <li><a href="D:\UGA App\NEW\UGADefenseSetup.html">Def Set Up</li> 
+        <li><a href="#">Roster</li>
+			</ul>
+		</nav>
+	</div >
+</header>
+  <script>
+    function populateTable(value) {
+      var table2 = document.getElementById("table2");
+      var row = table2.rows[0];
+      for (var i = 0; i < row.cells.length; i++) {
+        if (row.cells[i].innerHTML == value) {
+          row.deleteCell(i);
+          if (row.cells.length == 0) {
+            table2.deleteRow(0);
+          }
+          return;
+        }
+      }
+      var cell = row.insertCell(-1);
+      cell.innerHTML = value;
+      if (row.cells.length == 1) {
+        var newRow = table2.insertRow(-1);
+        newRow.insertCell(-1);
+      }
+    }
+  </script>
+
+<table class="pbptable" id="table2">
+    <tr>
+      <td>PLAY:</td>
+    </tr>
+</table>
+<br>
+<table class ="playerlist">
+  <thead>
+    <tr>
+    </tr>
+  </thead>
+  <tbody id="table-body">
+    <tr id="table-row">
+      <td class ="customplay" id="57" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="58" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="59" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="60" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="61" onclick="populateTable(this.innerHTML)"></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<table>
+  <thead>
+    <tr>
+    	<th class="poscol">DL</th>
+    	<th class="poscol">DL</th>
+    	<th class="poscol">DL</th>
+    </tr>
+  </thead>
+  <tbody id="table-body">
+    <tr id="table-row">
+      <td class ="customplay" id="62" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="63" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="64" onclick="populateTable(this.innerHTML)"></td>
+    </tr>
+    <tr id="table-row">
+      <td class ="customplay" id="65" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="66" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="67" onclick="populateTable(this.innerHTML)"></td>
+    </tr>
+    <tr id="table-row">
+      <td class ="customplay" id="68" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="69" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="70" onclick="populateTable(this.innerHTML)"></td>
+    </tr>
+    <tr id="table-row">
+      <td class ="customplay" id="71" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="72" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="73" onclick="populateTable(this.innerHTML)"></td>
+    </tr>
+    <tr id="table-row">
+      <td class ="customplay" id="74" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="75" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="76" onclick="populateTable(this.innerHTML)"></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<table>
+  <thead>
+    <tr>
+      <th class="poscol"></th>
+      <th class="poscol"></th>
+      <th class="poscol"></th>
+      <th class="poscol"></th>
+    </tr>
+  </thead>
+  <tbody id="table-body">
+    <tr id="table-row">
+      <td class ="customplay" id="77" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="78" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="79" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="80" onclick="populateTable(this.innerHTML)"></td>
+    </tr>
+    <tr id="table-row">
+      <td class ="customplay" id="81" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="82" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="83" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="84" onclick="populateTable(this.innerHTML)"></td>
+    </tr>
+    <tr id="table-row">
+      <td class ="customplay" id="85" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="86" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="87" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="88" onclick="populateTable(this.innerHTML)"></td>
+    </tr>
+    <tr id="table-row">
+      <td class ="customplay" id="89" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="90" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="91" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="92" onclick="populateTable(this.innerHTML)"></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<table>
+  <thead>
+    <tr>
+      <th class="poscol"></th>
+      <th class="poscol">S</th>
+      <th class="poscol">S</th>
+      <th class="poscol">CB</th>
+      <th class="poscol"></th>
+    </tr>
+  </thead>
+  <tbody id="table-body">
+    <tr id="table-row">
+      <td class ="customplay" id="93" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="94" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="95" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="96" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="97" onclick="populateTable(this.innerHTML)"></td>
+    </tr>
+    <tr id="table-row">
+      <td class ="customplay" id="98" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="99" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="100" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="101" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="102" onclick="populateTable(this.innerHTML)"></td>
+    </tr>
+    <tr id="table-row">
+      <td class ="customplay" id="103" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="104" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="105" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="106" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="107" onclick="populateTable(this.innerHTML)"></td>
+    </tr>
+    <tr id="table-row">
+      <td class ="customplay" id="108" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="109" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="110" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="111" onclick="populateTable(this.innerHTML)"></td>
+      <td class ="customplay" id="112" onclick="populateTable(this.innerHTML)"></td>
+    </tr>
+  </tbody>
+</table>
+
+<div>
+  <div class="inj-btn">
+    <button onclick="INJ()">INJURY</button>
+    <script>
+      function INJ() {
+        document.body.style.backgroundColor = "blue";
+      }
+    </script>
+</div>
+
+<div>
+  <div class="flag-btn">
+    <button onclick="FLAG()">FLAG</button>
+    <script>
+      function FLAG() {
+        document.body.style.backgroundColor = "yellow";
+      }
+    </script>
+</div>
+
+<div>
+  <div class="to-btn">
+    <button onclick="TO()">TIMEOUT</button>
+    <script>
+      function TO() {
+        document.body.style.backgroundColor = "green";
+      }
+    </script>
+</div>
+
+<div class="refresh">
+  <button onClick="window.location.reload();">Refresh</button>
+</div>
+
+<button class="clearallbtn" id="clear-button"></button>
+<button class="submitbutton" id="submit-button"></button>
+
+<script>
+  const tableRow = document.getElementById('table-row');
+  const submitButton = document.getElementById('submit-button');
+  const clearButton = document.getElementById('clear-button');
+
+  submitButton.addEventListener('click', function() {
+    for (let i = 57; i <= 112; i++) {
+      const Player = document.getElementById(`${i}`);
+      localStorage.setItem(`${i}`, Player.textContent);
+    }
+  });
+
+  clearButton.addEventListener('click', function() {
+    if (confirm("Are you sure? This will clear all players on Offense and Defense. This action cannot be undone.")) {
+      }
+  });
+
+  window.addEventListener('load', function() {
+    for (let i = 57; i <= 112; i++) {
+      const Player = document.getElementById(`${i}`);
+      const value = localStorage.getItem(`${i}`);
+      if (value) {
+        Player.textContent = value;
+      }
+    }
+  });
+</script>
+
+<script>
+  const buttonsContainer = document.querySelector("body");
+
+  buttonsContainer.addEventListener("click", function(event) {
+    if (event.target.matches(".customplay")) {
+      event.target.style.backgroundColor =
+        event.target.style.backgroundColor === "red" ? "" : "red";
+    }
+  });
+</script>
+
+<script type="text/javascript">
+var selectedCells = [];
+
+function toggleSelection(ID) {
+  var index = selectedCells.indexOf(ID);
+  if (index === -1) {
+    selectedCells.push(ID);
+    document.getElementById(ID).classList.add("selected");
+  } else {
+    selectedCells.splice(index, 1);
+    document.getElementById(ID).classList.remove("selected");
+  }
+}
+
+function submitSelection() {
+  var selectedCellsValue = selectedCells.map(id => document.getElementById(id).innerHTML);
+  document.getElementById("selectedCells").value = selectedCellsValue.join(",");
+  document.getElementById("myForm").submit();
+}
+</script>
+
+</style>
+</head>
+</script>
+</body>
+</html>
+
+
